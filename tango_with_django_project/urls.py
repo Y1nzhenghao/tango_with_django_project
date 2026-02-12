@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('rango.urls')), # Visit http://127.0.0.1:8000/ to access rango
+    path('rango/', include('rango.urls')), # Visit http://127.0.0.1:8000/ to access rango
     path('admin/', admin.site.urls),
 ]
