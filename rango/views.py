@@ -1,8 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def index(request):
     return HttpResponse("Rango says hey there partner! <br/><a href='/rango/about/'>About</a>")
 
 def about(request):
-    return HttpResponse("This tutorial has been put together by Charles. <br/><a href='/'>Home</a>")
+    return HttpResponse("This tutorial has been put together by Charles. <br/><a href='/rango/'>Home</a>")
